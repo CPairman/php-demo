@@ -26,7 +26,7 @@ jQuery( $ => {
         // Build a new FormData object from the form. This will contain the user's input.
         const formData = new FormData( form[0] );
 
-        const url = 'http://php.local/ajax.php';
+        const url = 'https://demo.calumpairman.dev/ajax.php';
 
         try {
             // Here we're submitting ajax with the Fetch API. The fetch function
