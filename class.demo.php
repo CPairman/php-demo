@@ -30,7 +30,7 @@ class Demo {
 
     /**
      * This function demonstrates how we can have optional parameters, by giving
-     * them a default value.
+     * them a default value. In this case the default value is just a blank string.
      *
      * We can also declare a parameter as 'mixed' to allow any type of variable
      * to be passed. Alternatively, you can  just omit the type declaration to
@@ -48,6 +48,9 @@ class Demo {
      * @return string The text to repeat.
      */
     function repeatText( string $text, mixed $optional = '' ) {
+        // Blank strings evaluate as false in PHP, whereas any other string
+        // evaluates as true. So the if statement below just checks if there's 
+        // anything in the string, and appends it if so.
         if ( $optional ) {
             $text .= $optional;
         }
