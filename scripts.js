@@ -40,7 +40,7 @@ jQuery( $ => {
             // The response is encoded in JSON, so parse it into an object.
             const responseJson = await response.json();
 
-            // Get the 'success' attribute of the object.
+            // Get the 'success' property of the object.
             const sentSuccessfully = responseJson.success;
 
             if ( sentSuccessfully ) {
