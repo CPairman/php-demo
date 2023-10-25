@@ -31,4 +31,5 @@ $success_response = array(
     'text'    => "Here is your text: $text",
 );
 
+// json_encode converts the array to JSON, then we echo it
 echo json_encode( $success_response );
