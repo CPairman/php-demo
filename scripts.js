@@ -12,7 +12,7 @@
  * (a, b) => {}; An arrow function with multiple parameters.
  */
 jQuery( $ => {
-    // We can use an arrow function here as we need access to the variable
+    // We can't use an arrow function here as we need access to the variable
     // 'this', which points to the button that's been clicked. 'this' isn't set
     // on arrow functions.
     $( '.button--ajax' ).on( 'click', async function(e) {
